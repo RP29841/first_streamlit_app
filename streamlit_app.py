@@ -25,9 +25,8 @@ try:
  if not fruit_choice:
         		streamlit.text_input('What fruit would you like information about?', 'kiwi')
  else:
-      fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)      
-
-  except URLError as e:
+      fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+   except URLError as e:
     streamlit.error()
 
 #import snowflake.connector
