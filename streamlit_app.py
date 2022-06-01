@@ -27,7 +27,7 @@ try:
  else:
       fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
  except URLError as e:
-   streamlit.error()
+     streamlit.error()
 
 #import snowflake.connector
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
